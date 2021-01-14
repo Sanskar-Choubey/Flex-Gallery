@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 html{
    box-sizing: border-box;
    background: yellow;
    font-family: 'helvetica neue';
    font-size: 20px;
-   font-weight: 500;
+   font-weight: 200;
 }
 
 body{
@@ -44,10 +44,11 @@ body{
 
 .panel p{
     text-transform: uppercase;
-    font-family: 'Amatic SC',cursive;
-    font-size: 2.5rem;
+    /* font-family: 'Amatic SC',cursive; */
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .panel p:nth-child(2) {
@@ -79,6 +80,9 @@ body{
 .panel.open-active > *:last-child {
     transform:translateY(0);
 }
+
+/* Section just to add background-image to each panel */
+
 .panel1{
 background-image: linear-gradient(rgba(0, 0, 0, 0.315),rgba(0, 0, 0, 0.253)),url(/images/panel1.jpg);
 }
@@ -98,6 +102,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.315),rgba(0, 0, 0, 0.253)),url
 .panel5{
     background-image: linear-gradient(rgba(0, 0, 0, 0.424),rgba(0, 0, 0, 0.534)),url(/images/panel5.jpg);
 }
+/* section end here */
+
 
 @media only screen and (max-width:600px){
     .panel p {
